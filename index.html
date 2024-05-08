@@ -6,47 +6,63 @@
     <meta name="color-scheme" content="light dark">
     <link rel="icon" type="image/png" href="data:image/png;base64,">
     <title>Daniel's CV</title>
-	<style>
-		/* Base styles (Light Mode) */
-		body {
-		    margin: 1em auto;
-		    max-width: 40em;
-		    padding: 0 .62em 3.24em;
-		    font: 1.2em/1.62 sans-serif;
-		    color: #000;
-		    background: #fff;
-		}
-		h1, h2, h3 {
-		    line-height: 1.2;
-		}
-		a {
-		    color: #0077cc;
-		    text-decoration: none;
-		}
-		a:hover {
-		    text-decoration: underline;
-		}
-		@media (prefers-color-scheme: dark) {
-		    body {
-			background: #000;
-			color: #f0f0f0;
-		    }
-		    a {
-			color: #66ccff;
-		    }
-		}
-		@media print {
-		    body {
-			max-width: none;
-		    }
-		}
-	</style>
+    <style>
+        /* Base styles (Light Mode) */
+        body {
+            margin: 1em auto;
+            max-width: 40em;
+            padding: 0 .62em 3.24em;
+            font: 1.2em/1.62 sans-serif;
+            color: #000;
+            background: #fff;
+        }
+        h1, h2, h3 {
+            line-height: 1.2;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        @media (prefers-color-scheme: dark) {
+            body {
+                background: #000;
+                color: #f0f0f0;
+            }
+            a {
+                color: #66ccff;
+            }
+        }
+        aside {
+            display: flex;
+            align-items: center;
+            gap: 1em;
+        }
+        img {
+            width: 250px;
+            height: 250px;
+        }
+        @media print {
+            body {
+                max-width: none;
+            }
+        }
+        @media (max-width: 690px) {
+            aside {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
 </head>
 <body>
     <article>
         <header>
             <h1>Daniel Ramirez</h1>
             <aside>
+                <img src="face.jpg" alt="Daniel Ramirez">
                 <ul>
                     <li><strong>Email:</strong> <a href="mailto:hi@danielrachi.com">hi@danielrachi.com</a></li>
                     <li><strong>Discord:</strong> <a href="https://discord.com/users/321481409552449536">danielrachi</a></li>
